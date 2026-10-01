@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PIZERIA | Wood-fired pizza</title>
+  <meta name="description" content="PIZERIA is a premium wood-fired pizza restaurant. Wood-fired. Hand-stretched. Made for sharing. Browse the menu, build your own pizza and order.">
+  <meta name="theme-color" content="#15120F">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2315120F'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23B83A2F' stroke='%23D5A34A' stroke-width='3'/%3E%3C/svg%3E">
+  <!-- Optional web fonts. If offline or blocked, the CSS falls back to system serif/sans stacks. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <a class="wordmark" href="#top" aria-label="PIZERIA, back to top">PIZERIA</a>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#builder">Build your own</a>
+      <a href="#craft">Craft</a>
+      <a href="#story">Story</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-red nav-order" href="#menu">Order now</a>
+    </nav>
+    <a class="btn btn-red header-order" href="#menu">Order now</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO + SCROLL-DRIVEN PIZZA ============ -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="hero-pin">
+        <div class="hero-glow" aria-hidden="true"></div>
+
+        <div class="hero-stage" role="img" aria-label="Illustration of a pepperoni and basil pizza that lifts apart into its layers as you scroll">
+          <div class="pizza3d" id="pizza3d">
+            <img class="lyr" data-layer="0" src="assets/dough.svg" alt="" width="800" height="800" fetchpriority="high">
+            <img class="lyr" data-layer="1" src="assets/sauce-tomato.svg" alt="" width="800" height="800">
+            <img class="lyr" data-layer="2" src="assets/cheese-mozzarella.svg" alt="" width="800" height="800">
+            <img class="lyr" data-layer="3" src="assets/top-pepperoni.svg" alt="" width="800" height="800">
+            <img class="lyr lyr-cuts" data-layer="3.5" src="assets/cuts.svg" alt="" width="800" height="800">
+            <img class="lyr" data-layer="4" src="assets/top-basil.svg" alt="" width="800" height="800">
+          </div>
+        </div>
+
+        <div class="hero-copy copy-1" data-win="0,0,.16,.24">
+          <h1>Wood-fired. Hand-stretched. Made for sharing.</h1>
+          <p>Slow-rested dough, crushed tomatoes and a 900° oven. Pizza the way it should arrive: blistered, bubbling and still too hot to touch.</p>
+          <div class="cta-row">
+            <a class="btn btn-red" href="#menu">Order now</a>
+            <a class="btn btn-ghost" href="#builder">Build your own</a>
+          </div>
+        </div>
+
+        <h2 class="hero-big copy-2" data-win=".24,.30,.42,.48">Nine hundred degrees.<br>Ninety seconds.</h2>
+
+        <div class="hero-copy copy-3" data-win=".52,.58,.80,.86">
+          <h2>Every layer earns its place.</h2>
+        </div>
+        <ol class="layer-key copy-3" data-win=".54,.60,.80,.86">
+          <li><strong>Basil</strong><span>Torn on after the oven</span></li>
+          <li><strong>Pepperoni</strong><span>Cups and crisps at the edge</span></li>
+          <li><strong>Mozzarella</strong><span>Melted, not buried</span></li>
+          <li><strong>Tomato</strong><span>Crushed by hand, barely cooked</span></li>
+          <li><strong>Dough</strong><span>Rested slowly, blistered fast</span></li>
+        </ol>
+
+        <div class="hero-copy copy-4" data-win=".88,.94,1.1,1.2">
+          <h2>Made for sharing.</h2>
+          <p>Four signatures, or build your own.</p>
+          <div class="cta-row"><a class="btn btn-red" href="#menu">See the menu</a></div>
+        </div>
+
+        <p class="scroll-hint" aria-hidden="true">Scroll</p>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE PIZZAS ============ -->
+    <section class="section menu" id="menu" aria-labelledby="menuTitle">
+      <div class="section-head reveal">
+        <h2 id="menuTitle">Signature pizzas</h2>
+        <p>Four pizzas we would order ourselves. Prices are sample prices for this demo.</p>
+      </div>
+      <ul class="cards">
+        <li class="card" data-id="margherita" data-name="Margherita" data-price="14">
+          <img src="assets/card-margherita.svg" alt="Illustration of a Margherita pizza with tomato, mozzarella and basil" width="800" height="800" loading="lazy">
+          <div class="card-body">
+            <div class="card-top"><h3>Margherita</h3><span class="price">$14</span></div>
+            <p>Crushed tomato, fior di latte, torn basil and a thread of olive oil.</p>
+            <button class="btn btn-cream add-btn" type="button">Add to cart</button>
+          </div>
+        </li>
+        <li class="card" data-id="spicy-pepperoni" data-name="Spicy Pepperoni" data-price="17">
+          <img src="assets/card-pepperoni.svg" alt="Illustration of a Spicy Pepperoni pizza with chilli sauce, pepperoni and jalapeños" width="800" height="800" loading="lazy">
+          <div class="card-body">
+            <div class="card-top"><h3>Spicy Pepperoni</h3><span class="price">$17</span></div>
+            <p>Chilli tomato, mozzarella, cupped pepperoni and pickled jalapeño.</p>
+            <button class="btn btn-cream add-btn" type="button">Add to cart</button>
+          </div>
+        </li>
+        <li class="card" data-id="truffle-mushroom" data-name="Truffle Mushroom" data-price="19">
+          <img src="assets/card-truffle.svg" alt="Illustration of a Truffle Mushroom pizza with white sauce, mushrooms and shaved truffle" width="800" height="800" loading="lazy">
+          <div class="card-body">
+            <div class="card-top"><h3>Truffle Mushroom</h3><span class="price">$19</span></div>
+            <p>Garlic cream, roasted mushrooms, mozzarella and shaved truffle.</p>
+            <button class="btn btn-cream add-btn" type="button">Add to cart</button>
+          </div>
+        </li>
+        <li class="card" data-id="garden-veggie" data-name="Garden Veggie" data-price="16">
+          <img src="assets/card-veggie.svg" alt="Illustration of a Garden Veggie pizza with mushrooms, olives, onion and basil" width="800" height="800" loading="lazy">
+          <div class="card-body">
+            <div class="card-top"><h3>Garden Veggie</h3><span class="price">$16</span></div>
+            <p>Tomato, mozzarella, mushrooms, black olives, red onion and basil.</p>
+            <button class="btn btn-cream add-btn" type="button">Add to cart</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ PIZZA BUILDER ============ -->
+    <section class="section builder" id="builder" aria-labelledby="builderTitle">
+      <div class="builder-grid">
+        <div class="builder-visual">
+          <div class="plate-wrap" id="plateWrap" role="img" aria-label="Preview of your custom pizza">
+            <img class="pl pl-plate" src="assets/plate.svg" alt="" width="800" height="800">
+            <div class="pl-pizza" id="plPizza">
+              <img class="pl" src="assets/dough.svg" alt="" width="800" height="800">
+              <img class="pl" id="plSauce" src="assets/sauce-tomato.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="mozzarella" src="assets/cheese-mozzarella.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="extra" src="assets/cheese-extra.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="pepperoni" src="assets/top-pepperoni.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="mushrooms" src="assets/top-mushroom.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="olives" src="assets/top-olive.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="jalapenos" src="assets/top-jalapeno.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="onion" src="assets/top-onion.svg" alt="" width="800" height="800">
+              <img class="pl tp" data-key="basil" src="assets/top-basil.svg" alt="" width="800" height="800">
+            </div>
+          </div>
+          <p class="note">Illustrative preview. It shows your choices, not a photo of the pizza you will receive.</p>
+        </div>
+
+        <div class="builder-panel">
+          <div class="section-head reveal">
+            <h2 id="builderTitle">Build your masterpiece</h2>
+            <p>Pick a size, a sauce and a cheese, then pile on toppings. The price updates as you go.</p>
+          </div>
+
+          <form class="builder-form" id="builderForm" onsubmit="return false">
+            <fieldset>
+              <legend>Size</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="size" value="small" data-price="0"><span>Small <em>+$0</em></span></label>
+                <label class="opt"><input type="radio" name="size" value="medium" data-price="2" checked><span>Medium <em>+$2</em></span></label>
+                <label class="opt"><input type="radio" name="size" value="large" data-price="4"><span>Large <em>+$4</em></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Sauce</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="sauce" value="tomato" checked><span>Tomato</span></label>
+                <label class="opt"><input type="radio" name="sauce" value="white"><span>White</span></label>
+                <label class="opt"><input type="radio" name="sauce" value="spicy"><span>Spicy</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Cheese</legend>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="cheese" value="none" data-price="0"><span>No cheese</span></label>
+                <label class="opt"><input type="radio" name="cheese" value="mozzarella" data-price="1" checked><span>Mozzarella <em>+$1</em></span></label>
+                <label class="opt"><input type="radio" name="cheese" value="extra" data-price="2"><span>Extra cheese <em>+$2</em></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Toppings</legend>
+              <div class="opts">
+                <label class="opt"><input type="checkbox" name="topping" value="pepperoni" data-price="2"><span>Pepperoni <em>+$2</em></span></label>
+                <label class="opt"><input type="checkbox" name="topping" value="mushrooms" data-price="1"><span>Mushrooms <em>+$1</em></span></label>
+                <label class="opt"><input type="checkbox" name="topping" value="olives" data-price="1"><span>Olives <em>+$1</em></span></label>
+                <label class="opt"><input type="checkbox" name="topping" value="basil" data-price="1"><span>Basil <em>+$1</em></span></label>
+                <label class="opt"><input type="checkbox" name="topping" value="jalapenos" data-price="1"><span>Jalapeños <em>+$1</em></span></label>
+                <label class="opt"><input type="checkbox" name="topping" value="onion" data-price="1"><span>Red onion <em>+$1</em></span></label>
+              </div>
+            </fieldset>
+
+            <div class="builder-total">
+              <div>
+                <p class="summary" id="builderSummary" aria-live="polite"></p>
+                <p class="base-note">Includes a $12 hand-stretched base. Sample prices.</p>
+              </div>
+              <div class="total-box">
+                <output class="total" id="builderTotal" for="builderForm" aria-live="polite">$15</output>
+                <button class="btn btn-cream" id="builderAdd" type="button">Add to cart</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CRAFT ============ -->
+    <section class="section craft" id="craft" aria-labelledby="craftTitle">
+      <h2 id="craftTitle" class="reveal">Four things we refuse to rush.</h2>
+      <ul class="craft-list">
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c1 5 7 7 7 14a7 7 0 0 1-14 0c0-3 2-5 3-7 1 2 2 3 3 3 1-3 0-6 1-10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <h3>Wood fire</h3>
+          <p>A 900° oven finishes each pizza in about ninety seconds, leaving a blistered crust and a soft centre.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="19" rx="11" ry="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 17c0-5 3.500-9 8-9s8 4 8 9" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3>Slow dough</h3>
+          <p>Mixed with little yeast and left to rest, so the crust tastes of wheat and stays light.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="18" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 9c0-3 1-5 4-6M12 10c-2-2-5-2-7-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <h3>Crushed tomato</h3>
+          <p>Crushed by hand, seasoned with salt and nothing else. The oven does the cooking.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c8 3 11 11 5 19-2 3-4 4-5 6-1-2-3-3-5-6C5 15 8 7 16 4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16 8v18" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>Basil, last</h3>
+          <p>Leaves go on after the oven so they stay green and fragrant.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section story" id="story" aria-labelledby="storyTitle">
+      <div class="story-grid">
+        <figure class="story-img">
+          <img src="assets/crust-closeup.svg" alt="Illustration close-up of a blistered pizza crust edge with tomato, mozzarella and basil" width="800" height="800" loading="lazy">
+        </figure>
+        <div class="story-copy">
+          <h2 id="storyTitle" class="reveal">Good pizza is mostly patience and a very hot oven.</h2>
+          <p>PIZERIA started with a simple idea: make one pizza properly and serve it while it is still alive. Every dough ball is rested, every tomato is crushed by hand, and every pie goes into the fire just long enough.</p>
+          <p>We cook for tables, not for tickets. Order one for yourself or four for everyone, and tear into it together.</p>
+          <a class="btn btn-red" href="#menu">Order now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT + TESTIMONIALS ============ -->
+    <section class="section visit" id="visit" aria-labelledby="visitTitle">
+      <div class="visit-grid">
+        <div class="visit-info">
+          <h2 id="visitTitle" class="reveal">Visit PIZERIA</h2>
+          <p class="demo-flag">Demo details. Replace the address, hours and contact before launch.</p>
+          <dl>
+            <div><dt>Address</dt><dd>[Street address]<br>[City, State ZIP]</dd></div>
+            <div><dt>Hours</dt><dd>Mon to Thu: [open] to [close]<br>Fri to Sun: [open] to [close]</dd></div>
+            <div><dt>Phone</dt><dd>(000) 000-0000</dd></div>
+            <div><dt>Email</dt><dd>hello@example.com</dd></div>
+          </dl>
+        </div>
+
+        <div class="reviews" role="group" aria-roledescription="carousel" aria-label="Sample reviews">
+          <p class="demo-flag">Sample reviews. Demo content until real guest reviews are added.</p>
+          <div class="review-viewport" id="reviewViewport">
+            <figure class="review" id="review-0"><blockquote>The crust had real char and the middle stayed soft. We finished two pizzas before the table had stopped talking.</blockquote><figcaption>Sample guest, demo review</figcaption></figure>
+            <figure class="review" id="review-1" hidden><blockquote>Simple menu, no fuss. The Margherita tasted like someone cared about the tomatoes.</blockquote><figcaption>Sample guest, demo review</figcaption></figure>
+            <figure class="review" id="review-2" hidden><blockquote>Built our own with extra cheese and jalapeños. Arrived hot, gone in ten minutes.</blockquote><figcaption>Sample guest, demo review</figcaption></figure>
+          </div>
+          <div class="review-ctrl">
+            <button type="button" class="icon-btn" id="revPrev" aria-label="Previous review">&#8592;</button>
+            <span id="revCount" aria-live="polite">1 of 3</span>
+            <button type="button" class="icon-btn" id="revNext" aria-label="Next review">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final" id="order" aria-labelledby="finalTitle">
+      <div class="final-bg" aria-hidden="true"></div>
+      <h2 id="finalTitle"><span>Your next slice</span> <span class="red">starts here.</span></h2>
+      <div class="cta-row">
+        <a class="btn btn-red" href="#menu">Order now</a>
+        <a class="btn btn-ghost" href="#builder">Build your own</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="foot-grid">
+      <div>
+        <a class="wordmark" href="#top">PIZERIA</a>
+        <p class="foot-tag">Wood-Fired. Hand-Stretched. Made for Sharing.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#menu">Menu</a>
+        <a href="#builder">Build your own</a>
+        <a href="#craft">Craft</a>
+        <a href="#story">Story</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div>
+        <p class="foot-h">Contact</p>
+        <p>(000) 000-0000<br>hello@example.com</p>
+        <p class="foot-h">Hours</p>
+        <p>[Opening hours placeholder]</p>
+      </div>
+      <div>
+        <p class="foot-h">Social</p>
+        <p class="muted">Instagram: add your handle<br>Facebook: add your page<br>TikTok: add your account</p>
+      </div>
+    </div>
+    <p class="legal">&copy; 2026 PIZERIA. Demo website. Images are illustrations. Prices and details are samples.</p>
+  </footer>
+
+  <!-- ============ CART ============ -->
+  <button class="cart-fab" id="cartFab" type="button" aria-haspopup="dialog" aria-controls="cartDrawer" aria-label="Open cart, 0 items">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M5 8h14l-1.200 11.500a1 1 0 0 1-1 .9H7.200a1 1 0 0 1-1-.9L5 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.500a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span class="fab-count" id="fabCount" hidden>0</span>
+  </button>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="cart-head">
+      <h2 id="cartTitle">Your cart</h2>
+      <button class="icon-btn" id="cartClose" type="button" aria-label="Close cart">&#10005;</button>
+    </div>
+    <div class="cart-empty" id="cartEmpty">
+      <p>Your cart is empty.</p>
+      <a class="btn btn-cream" href="#menu" id="cartBrowse">Browse the menu</a>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-foot" id="cartFoot" hidden>
+      <div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+      <p class="cart-note">Demo cart. No payment is taken and checkout is not connected.</p>
+      <button class="btn btn-red" id="checkoutBtn" type="button">Checkout (demo)</button>
+      <p class="checkout-msg" id="checkoutMsg" role="status"></p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
